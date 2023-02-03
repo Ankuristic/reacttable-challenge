@@ -5,17 +5,9 @@ import { useEffect, useState } from "react";
 import  './App.css'
 export default function App() {
  const [ data, setData ] = useState([]);
- const[myName,setMyName]=useState('thapa technical')
  const[detailsShown,setDetailShown]=useState([])
 
-//  const changeName =()=>{
-//   let val =myName;
-//   if(val ==='thapa technical'){
-//    const  setMyName('vinod thapa')
-//   } else {
-//   setMyName('vinod thapa')
-//   }
-//  }
+
 const toggleShown = username => {
   const shownState = detailsShown.slice();
   const index = shownState.indexOf(username);
